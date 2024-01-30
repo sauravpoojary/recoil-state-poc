@@ -1,6 +1,6 @@
 import { RecoilRoot, useRecoilState, useRecoilValue } from 'recoil';
 import './App.css'
-import { countAtom } from './store/atoms/count';
+import { countAtom, evenSelector } from './store/atoms/count';
 
 function App() {
 
@@ -15,6 +15,8 @@ function Count(){
   return <div>
     <CountRenderer />
     <Buttons />
+    {/* <Header /> */}
+    <OptimalHeaderUsingSelector />
   </div>
 }
 
@@ -35,5 +37,24 @@ function Buttons(){
     }}>Decrease</button>
   </div>
 }
+
+function Header() {
+  const count = useRecoilValue(countAtom);
+  return <div>
+    {
+      count%2===0 ? <h1>Even</h1> : <h1>Odd</h1>
+    }
+  </div>
+}
+
+function OptimalHeaderUsingSelector() { //use selector when something completly depends on something
+  const isEven = useRecoilValue(evenSelector);
+  return <div>
+    {
+      isEven ? <h1>Even</h1> : <h1>Odd</h1>
+    }
+  </div>
+}
+
 
 export default App
