@@ -1,8 +1,4 @@
-# React + Vite
+# RECOIL STATE POC
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![IMG_1326](https://github.com/sauravpoojary/recoil-state-poc/assets/71210591/703eabcf-6058-4a27-a47a-2f3b3aeb652a)
